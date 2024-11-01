@@ -1,7 +1,7 @@
 #include <iostream>
-#include <Paisev.h>
+#include "Paisev.h"
 
-bool isPrime(int n) {
+bool Paisev_algorithm(int n) {
     if (n <= 1) {
         return false;
     }
