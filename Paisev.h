@@ -1,3 +1,3 @@
 #include <iostream>
 
-bool isPrime(int);
+bool Paisev_algorithm(int);
