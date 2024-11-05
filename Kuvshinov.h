@@ -1,6 +1,6 @@
 #ifndef KUVSHINOV_H
 #define KUVSHINOV_H
 
-bool isPrime(int n);
+bool Kuvshinov(int n);
 
 #endif 
