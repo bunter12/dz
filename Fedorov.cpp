@@ -2,7 +2,7 @@
 #include <vector>
 #include "Fedorov.h"
 
-int sieveOfAtkin(int n) {
+vector<int> sieveOfAtkin(int n) {
     std::vector<bool> isPrime(n + 1, false);
     std::vector<int> primes;
 
