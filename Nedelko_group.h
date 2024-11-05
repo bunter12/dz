@@ -1,4 +1,4 @@
 #include <iostream>
 #include <vector>
 
-bool sieveOfEratosthenes(int);
+std::vector<int> sieveOfEratosthenes(int n);
