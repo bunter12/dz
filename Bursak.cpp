@@ -24,7 +24,7 @@ vector<int> Sundaram(int N) {
         if (prime_numbers[i]) {
             primes.push_back(2 * i + 1);
         }
- 
+    }
 
     return primes;
 }

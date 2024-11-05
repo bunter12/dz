@@ -1,2 +1,2 @@
 #include <iostream>
-bool TrialDivision(int, n);
+bool TrialDivision(int n);
