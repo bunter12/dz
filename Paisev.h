@@ -1,3 +1,3 @@
 #include <iostream>
 
-bool Paisev_algorithm(int);
+bool 6k_1(int);

@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Paisev.h"
 
-bool Paisev_algorithm(int n) {
+bool 6k_1(int n) {
     if (n <= 1) {
         return false;
     }
