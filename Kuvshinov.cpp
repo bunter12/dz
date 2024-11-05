@@ -1,6 +1,6 @@
 ﻿#include "Kuvshinov.h"
 #include <cmath>
-
+// метод тривиального перебора делителей
 bool Kuvshinov(int n) {
     if (n <= 1) return false; 
 
