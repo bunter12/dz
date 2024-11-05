@@ -8,8 +8,8 @@ vector<int> Sundaram(int N) {
     vector<bool> prime_numbers(newN + 1, true);
     
     // Алгоритм Сундарама для нахождения простых чисел
-    for (int i = 1; i <= newN; ++i) {
-        for (int j = i; (i + j + 2 * i * j) <= newN; ++j) {
+    for (long long i = 1; i <= newN; ++i) {
+        for (long long j = i; (i + j + 2 * i * j) <= newN; ++j) {
             prime_numbers[i + j + 2 * i * j] = false;
         }
     }
