@@ -4,7 +4,7 @@
 
 vector<int> sieveOfAtkin(int n) {
     std::vector<bool> isPrime(n + 1, false);
-    std::vector<int> primes;
+    std::vector<int> primes={2,3};
 
     int sqrtn = sqrt(n);
 

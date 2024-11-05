@@ -1,4 +1,4 @@
 #include <iostream>
 #include <vector>
 
-vector<int> sieveOfAtkin(int);
+std::vector<int> sieveOfAtkin(int n);
