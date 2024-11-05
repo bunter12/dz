@@ -1,3 +1,3 @@
 #include <iostream>
 
-bool 6k_1(int);
+bool method_6k_1(int);
