@@ -1,6 +1,2 @@
-#ifndef KUVSHINOV_H
-#define KUVSHINOV_H
-
-bool TrialDivision(int n);
-
-#endif 
+#include <iostream>
+bool TrialDivision(int, n);
