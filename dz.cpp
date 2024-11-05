@@ -42,10 +42,9 @@ void testFunc(type f(int), const std::string functionName) {
 }
 
 int main() {
-	/*TEST(sieveOfAtkin);
+	TEST(sieveOfAtkin);
 	TEST(sieveOfEratosthenes);
 	TEST(method_6k_1);
 	TEST(TrialDivision);
-	TEST(Sundaram);*/
-	std::cout << method_6k_1(8);
+	TEST(Sundaram);
 }
