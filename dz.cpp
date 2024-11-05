@@ -2,15 +2,13 @@
 #include <chrono>
 #include <set>
 #include <string>
-#include <thread>
-#include <mutex>
 #include "Nedelko_group.h"
 #include "Paisev.h"
 #include "Fedorov.h"
 #include "Kuvshinov.h"
 #include "Bursak.h"
 
-std::mutex m;
+
 #define TEST(x) testFunc(x, #x)
 
 long long Run(bool f(int), const int numbers) {
@@ -36,19 +34,18 @@ long long Run(std::vector<int> f(int), const int numbers) {
 
 template <typename type>
 void testFunc(type f(int), const std::string functionName) {
-	m.lock();
 	std::cout << "Function name: " << functionName << std::endl;
 	for (int i = 100; i <= 100000000; i = i * 100) {
 		std::cout << "For numbers " << i << std::endl;
 		std::cout << "Time: " << Run(f,i) << std::endl;
 	}
-	m.unlock();
 }
 
 int main() {
-	TEST(sieveOfAtkin);
+	/*TEST(sieveOfAtkin);
 	TEST(sieveOfEratosthenes);
 	TEST(method_6k_1);
 	TEST(TrialDivision);
-	TEST(Sundaram);
+	TEST(Sundaram);*/
+	std::cout << method_6k_1(8);
 }
