@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Paisev.h"
 
-bool 6k_1(int n) {
+bool method_6k_1(int n) {
     if (n <= 1) {
         return false;
     }
