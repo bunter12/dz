@@ -1,21 +1,18 @@
-﻿#include <vector>
+﻿// Kuvshinov.cpp
 #include "Kuvshinov.h"
+#include <cmath> // для функции sqrt
 
-std::vector<int> findDivisors(int n) {
-    std::vector<int> divisors;
+bool isPrime(int n) {
+    if (n <= 1) return false;         // Числа меньше 2 не являются простыми
+    if (n <= 3) return true;          // 2 и 3 — простые числа
+    if (n % 2 == 0 || n % 3 == 0) return false; // Исключаем четные и кратные 3
 
-    if (n <= 0) {
-        return divisors; // Возвращаем пустой вектор для некорректного ввода
-    }
-
-    for (int i = 1; i * i <= n; ++i) {
-        if (n % i == 0) {
-            divisors.push_back(i);
-            if (i != n / i) { // Избегаем добавления квадрата корня дважды
-                divisors.push_back(n / i);
-            }
+    // Проверка делителей от 5 до sqrt(n) с шагом 6 (5, 7, 11, 13, ...)
+    for (int i = 5; i * i <= n; i += 6) {
+        if (n % i == 0 || n % (i + 2) == 0) {
+            return false;
         }
     }
 
-    return divisors;
+    return true; // Если делители не найдены, число простое
 }

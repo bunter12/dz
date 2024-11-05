@@ -1,3 +1,6 @@
-#include <vector>
+#ifndef KUVSHINOV_H
+#define KUVSHINOV_H
 
-std::vector<int> findDivisors(int n);
+bool isPrime(int n);
+
+#endif
